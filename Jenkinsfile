@@ -46,7 +46,7 @@ stage ('k8sdeployment')
     {
         steps {
             node (' Ansilbe') {
-       sh " sudo ansible-playbook /root/dep.yml 
+       sh " sudo ansible-playbook /root/dep.yml "
    
     }
 }
