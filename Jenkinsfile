@@ -19,7 +19,7 @@ stage ('Build1')
 {
     steps
     {
-        sh "cd /home/ubuntu/workspace/JnekinsPipelneDevOps"/${Service_name}" ; mvn clean install " 
+        sh "cd /home/ubuntu/workspace/JnekinsPipelneDevOps"\${Service_name}" ; mvn clean install " 
     }
 }
     stage ('dockerbuild') 
