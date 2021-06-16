@@ -19,7 +19,7 @@ stage ('Build1')
 {
     steps
     {
-        sh "cd /home/ubuntu/workspace/JnekinsPipelneDevOps"${Service_name}" ; mvn clean install " 
+        sh "cd /home/ubuntu/workspace/JnekinsPipelneDevOps/"${Service_name}" ; mvn clean install " 
     }
 }
     stage ('dockerbuild') 
@@ -46,7 +46,7 @@ stage ('k8sdeployment')
     {
         steps {
             node (' Ansilbe') {
-       sh " sudo ansible-playbook /root/dep.yml "
+       sh " sudo ansible-playbook /root/k8s.yml "
    
     }
 }
